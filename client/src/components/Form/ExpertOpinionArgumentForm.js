@@ -26,7 +26,7 @@ const ExpertOpinionForm = () => {
 
         const payload = { ...formData, isAttackedBy: [] };
 
-        const endpoint = 'http://localhost:8000/argumentSchemas/expert-opinion'; 
+        const endpoint = 'https://argupedia.onrender.com/argumentSchemas/expert-opinion'; 
         console.log('Payload sent to createArgument expert-opinion:', payload);
 
         if ('E' in formData && 'D' in formData && 'A' in formData) {

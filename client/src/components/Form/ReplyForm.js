@@ -21,7 +21,7 @@ const ReplyForm = ({ onSubmit, onCancel, clickedNode }) => {
 
         const fetchCriticalQuestions = async () => {
             try {
-                const response = await fetch(`http://localhost:8000/argumentSchemas`);
+                const response = await fetch(`https://argupedia.onrender.com/argumentSchemas`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch argument schemas');
                 }
@@ -180,15 +180,15 @@ const ReplyForm = ({ onSubmit, onCancel, clickedNode }) => {
         switch (selectedArgumentType) {
             case 'Action Argument':
                 action_creator = createActionSchema;
-                endpoint = 'http://localhost:8000/argumentSchemas/action';
+                endpoint = 'https://argupedia.onrender.com/argumentSchemas/action';
                 break;
             case 'Expert Opinion Argument':
                 action_creator = createExpertOpinionSchema;
-                endpoint = 'http://localhost:8000/argumentSchemas/expert-opinion';
+                endpoint = 'https://argupedia.onrender.com/argumentSchemas/expert-opinion';
                 break;
             case 'Position to Know Argument':
                 action_creator = createPositionToKnowSchema;
-                endpoint = 'http://localhost:8000/argumentSchemas/position-to-know';
+                endpoint = 'https://argupedia.onrender.com/argumentSchemas/position-to-know';
                 break;
             default:
                 console.error('Invalid argument type');

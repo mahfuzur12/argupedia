@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'http://localhost:8000/argumentSchemas';
+const baseURL = 'https://argupedia.onrender.com/argumentSchemas';
 
 export const fetchArgumentSchemas = () => axios.get(baseURL);
 export const createActionSchema = (newActionSchema) => axios.post(`${baseURL}/action`, newActionSchema);

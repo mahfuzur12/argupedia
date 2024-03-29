@@ -28,7 +28,7 @@ const ActionArgumentForm = () => {
 
         const payload = { ...formData, isAttackedBy: [] };
 
-        const endpoint = 'http://localhost:8000/argumentSchemas/action';
+        const endpoint = 'https://argupedia.onrender.com/argumentSchemas/action';
         console.log('Payload sent to createArgument action:', payload);
 
         if ('R' in formData && 'A' in formData && 'S' in formData && 'G' in formData && 'V' in formData) {

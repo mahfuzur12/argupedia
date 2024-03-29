@@ -9,7 +9,7 @@ const Graph = ({ startingNodeId, handleNodeClick }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:8000/argumentSchemas`);
+        const response = await fetch(`https://argupedia.onrender.com/argumentSchemas`);
         if (!response.ok) {
           throw new Error('Failed to fetch argument schemas');
         }

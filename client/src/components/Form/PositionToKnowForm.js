@@ -25,7 +25,7 @@ const PositionToKnowForm = () => {
 
         const payload = { ...formData, isAttackedBy: [] };
 
-        const endpoint = 'http://localhost:8000/argumentSchemas/position-to-know'; 
+        const endpoint = 'https://argupedia.onrender.com/argumentSchemas/position-to-know'; 
         console.log('Payload sent to createArgument position-to-know:', payload);
 
         if ('P' in formData && 'A' in formData) {
